@@ -6,6 +6,7 @@ import Test from '../pages/test';
 import LoginPage from '../pages/login';
 //import KakaoLogin from './Components/KakaoLogin';
 import NoMatchPage from '../pages/noMatch';
+import OAuth2RedirectHandler from '../Components/KakaoRedirectHandler';
 
 export default function RootRoute() {
   return (
@@ -18,6 +19,9 @@ export default function RootRoute() {
         <Route path="/home" element={<HomePage />}  key="home" />
         {/*<Route path="/kakaoLogin" element={<KakaoLogin />}></Route>*/}
         <Route path="/login" element={<LoginPage />} key="login" />
+
+        <Route path="/auth/kakao/callback" component={OAuth2RedirectHandler}></Route>
+
 
         {/* 경로가 유효하지 않을 때 */}
         <Route path="*" element={<NoMatchPage />} key="noMatch" />

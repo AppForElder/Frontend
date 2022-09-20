@@ -8,7 +8,7 @@ const kakao_img = <img src={kakao} width= '30%' height='30%'/>;
 
 const KakaoLogin = () => {
     // 카카오 개발자 앱 키 선언
-    const REST_API_KEY = "e289eaea04d1431421f1a03e9525d022"; // RestAPI 키
+    const REST_API_KEY = "7d0ce091bb0b047a876197dccd19948f"; // RestAPI 키
     const REDIRECT_URI = "http://localhost:3000/login"; // redirect 주소
     const KAKAO_AUTH_URI = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
     // 인가코드 받아오기
