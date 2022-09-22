@@ -20,7 +20,7 @@ export default function RootRoute() {
         {/*<Route path="/kakaoLogin" element={<KakaoLogin />}></Route>*/}
         <Route path="/login" element={<LoginPage />} key="login" />
 
-        <Route path="/auth/kakao/callback" component={OAuth2RedirectHandler}></Route>
+        <Route path="/auth/kakao/callback" element={<OAuth2RedirectHandler/>}></Route>
 
 
         {/* 경로가 유효하지 않을 때 */}
