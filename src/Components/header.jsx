@@ -27,6 +27,12 @@ export default function header({ page }) {
             <Button>로그아웃</Button>
           </Link>
         )}
+
+        {page == "register" && (
+          <Link to="/login">
+            <Button>뒤로가기</Button>
+          </Link>
+        )}
         
       </LoginBtn>
 		</Header>

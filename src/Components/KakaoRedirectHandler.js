@@ -25,7 +25,7 @@ const OAuth2RedirectHandler = (props) => {
     const getKakaoJwt = async () => {
         
 		console.log(code);
-
+        navigate ("../home" , { replace: true});
 		// 우리 서버 API 
         
         {/*try{
