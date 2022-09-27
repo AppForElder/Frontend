@@ -4,6 +4,7 @@ import IndexPage from '../pages';
 import HomePage from '../pages/home';
 import Test from '../pages/test';
 import LoginPage from '../pages/login';
+import RegisterPage from '../pages/login/registerPage';
 //import KakaoLogin from './Components/KakaoLogin';
 import NoMatchPage from '../pages/noMatch';
 import OAuth2RedirectHandler from '../Components/KakaoRedirectHandler';
@@ -19,7 +20,7 @@ export default function RootRoute() {
         <Route path="/home" element={<HomePage />}  key="home" />
         {/*<Route path="/kakaoLogin" element={<KakaoLogin />}></Route>*/}
         <Route path="/login" element={<LoginPage />} key="login" />
-
+        <Route path="/register" element={<RegisterPage />} key="register" />
         <Route path="/auth/kakao/callback" element={<OAuth2RedirectHandler/>}></Route>
 
 
